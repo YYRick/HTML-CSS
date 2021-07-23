@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day04 | 表格</title>
+    <style>
+        table{
+            text-align: center;
+            margin: 0 auto;
+            /* 合并边框线 */
+            /* border-collapse: collapse; */
+        }
+    </style>
+</head>
+<body>
+    <!--  
+        table 表格
+        tr 行
+        td 单元格
+        th  表头
+        
+        table的属性：
+        border：边框
+        width/height：宽高
+        cellpadding：文字内容到边框的距离
+        cellspacing：边框之间的距离
+
+
+        cellspacing="0"  设置表格为单边框  默认是双线边框
+     -->
+
+
+     <!-- 
+         合并单元格
+         colspan  合并列
+         rowspan  合并行
+      -->
+     <table border="1"; width="500px" height="300px" cellspacing='0'>
+         <tr>
+             <th>语文</th>
+             <th>数学</th>
+             <th>英语</th>
+         </tr>
+         <tr>
+             <td>100</td>
+             <td colspan="2">100</td>
+         </tr>
+         <tr>
+             <td rowspan="2">100</td>
+             <td>100</td>
+             <td>100</td>
+         </tr>
+         <tr>
+             <td>100</td>
+             <td>100</td>
+         </tr>
+     </table>
+</body>
+</html>

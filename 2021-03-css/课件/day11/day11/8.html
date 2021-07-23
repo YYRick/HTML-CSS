@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background:pink;
+            /* 过渡的属性 */
+            /* transition-property: height;
+            transition-duration:1s ;
+            transition-timing-function:linear ; */
+            /*延迟  */
+            /* transition-delay: 1s; */
+            /* transition:height 1s linear 1s,width 1s linear 1s; */
+            /* 
+             all 代表所有变换的属性
+             第二个值：动画执行的时间
+             第三个值：运动的曲线 默认是ease
+             第四个值：延迟
+
+            */
+            transition:all 1s linear 0s;
+           
+        }
+        .box:hover{
+            width:500px;
+            height: 500px;
+           
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day08 | nth-child</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,ol{
+            list-style: none;
+        }
+        /* 快速选择任意行 */
+      /*   ul>li:nth-child(3){
+            background: pink;
+        } */
+
+        /* 选择奇数行 */
+        /* ul>li:nth-child(odd){
+            background: purple;
+        }
+
+        ul>li:nth-child(2n-1){
+            background: orange;
+        }
+
+        ul>li:nth-child(2n+1){
+            background: greenyellow;
+        } */
+
+        /* 选择偶数行 */
+        /* ul>li:nth-child(even){
+            background: palegreen;
+        }
+
+        ul>li:nth-child(2n){
+            background: red;
+        } */
+
+        /* 选中第一个 */
+        ul>li:first-child{
+           background: pink;
+        }
+        /* 选中最后一个 */
+        ul>li:last-child{
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+</body>
+</html>

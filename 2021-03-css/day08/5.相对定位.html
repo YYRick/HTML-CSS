@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day05 | 相对定位</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background: pink;
+            position: relative;
+            left: 20px;
+            top: 20px;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        相对定位：按照自身作为参照物进行定位
+            + 不会脱离文档流，原来的位置还占着
+            + 层级高于正常文档流，可以盖住在普通文档流中的元素
+     -->
+     <div class="box"></div>
+     <div class="box1"></div>
+</body>
+</html>

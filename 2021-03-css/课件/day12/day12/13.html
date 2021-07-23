@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background:pink;
+        }
+        /*  
+        最大值是640px; 小于等于640
+        
+        */
+        @media screen and (max-width:640px) {
+            .box{
+                width:100px;
+                height: 100px;
+                background:green;
+            }
+           
+        }
+        /* 
+         大于等于641的时候并且小于等于1000px
+        
+        */
+        @media screen and (min-width:641px) and (max-width:1000px){
+            .box{
+                width:150px;
+                height: 150px;
+                background:blue;
+            }
+        }
+        /* 
+          大于等于1001px
+        */
+        @media screen and (min-width:1001px) {
+            .box{
+                width:200px;
+                height: 150px;
+                background:yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p>p1</p>
+</body>
+</html>

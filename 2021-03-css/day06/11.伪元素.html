@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 伪元素
+           注意：伪元素的content必须要写
+        */
+        p::before{
+            content: "棒棒的";
+            color: red;
+        }
+        p::after{
+            content: "哈哈哈";
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <p>今天天气的好晴朗！！！</p>
+</body>
+</html>

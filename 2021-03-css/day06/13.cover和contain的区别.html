@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day05 | cover和contain的区别</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 300px;
+            border: 1px solid red;
+            background: url(../images/Q版柯南.jpg) no-repeat;
+            margin: 0 auto;
+            /* 宽高都要达到盒子的大小 */
+            background-size: cover;
+            /* 只要有一个就可以达到盒子的大小 */
+            /* background-size: contain; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

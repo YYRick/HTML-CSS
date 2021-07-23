@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day08 | 面试题：如何让元素水平垂直居中2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main{
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            background: yellow;
+            position: relative;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background: pink;
+            left: 50%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:darkturquoise;
+        }
+        .main{
+            width: 500px;
+            height: 500px;
+            border:1px dashed darkcyan;
+            margin:0 auto;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background:darkorange;
+            animation: run 1s linear infinite;
+        }
+        @keyframes run{
+            0%{
+                transform:translate(0,0);
+            }
+            25%{
+                transform:translate(400px,0);
+            }
+            50%{
+                transform:translate(400px,400px);
+            }
+            75%{
+                transform:translate(0px,400px);
+            }
+            100%{
+                transform:translate(0,0);
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+       <div class="box"></div>
+    </div>
+</body>
+</html>

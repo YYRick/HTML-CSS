@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background: url("images/2.jpg") center center no-repeat;
+            background-size: cover;
+        }
+
+        .cricle {
+            width: 768px;
+            height: 768px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            /* margin-left:-384px;
+            margin-top:-384px; */
+            transform: translate(-50%, -50%);
+            background: url("images/fsw.png") center center no-repeat;
+            background-size: cover;
+            animation: run 50s linear infinite;
+        }
+
+        .text {
+            width: 577px;
+            height: 257px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: url("images/big-title.png") center center no-repeat;
+            background-size: cover;
+        }
+
+        .people1 {
+            width: 130px;
+            height: 170px;
+            background: url("images/girl.png");
+            position: absolute;
+            left: 20px;
+            top: 110px;
+            animation: run2 10s linear infinite;
+            
+        }
+
+        @keyframes run{
+            0%{
+                transform:translate(-50%, -50%) rotateZ(0);
+            }
+            100%{
+                transform:translate(-50%, -50%) rotateZ(360deg);
+            }
+        }
+        @keyframes run2{
+            0%{
+                transform: rotateZ(0);
+            }
+            100%{
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cricle">
+        <div class="people1"></div>
+    </div>
+    <div class="text"></div>
+</body>
+
+</html>

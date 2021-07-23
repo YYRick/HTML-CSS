@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+
+        .inner{
+            height: 50px;
+            background-color: pink;
+        }
+
+        span{
+            background-color: red;
+        }
+
+        strong{
+            background-color: purple;
+        }
+
+        input{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        块级元素的特点：独占父元素同一行
+        行内级元素的特点：和其它元素可以在同一行显示
+     -->
+     <!-- 1.块级元素 -->
+     <div class="box">
+         <div class="inner"></div>
+     </div>
+
+     <!-- 2.行内级元素 -->
+     <span>我是span元素</span>
+     <strong>我是strong</strong>
+     <img src="../img/test_01.webp" alt="">
+     <input type="text">
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day05 | 计算盒子的大小</title>
+    <style>
+        /* 
+           计算标准盒模型的大小：
+               height=content部分的高度+上下两部分的padding+上下两部分的border
+               width=content部分的宽度+左右两部分的padding+左右两部分的border
+               注意：对于标准盒模型来说，设置的width和height值不是总盒子的宽高，而是content的宽高
+        */
+        .box{
+            width: 100px;
+            height: 100px;
+            background: pink;
+            padding: 20px;
+            border: 10px solid yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">box</div>
+</body>
+</html>

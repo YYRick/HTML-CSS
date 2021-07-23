@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day06 | 浮动造成的问题</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 第四种：最常用的 */
+        .clearfix:after{
+            content:"";
+            font-size:0;
+            display:block;
+            height:0;
+            visibility: hidden;
+            clear: both;
+        }
+        .clearfix{
+            *zoom:1;
+        }
+        .main{
+            width: 500px;
+            background: yellowgreen;
+            /* 第一种解决办法  给父元素加高度*/
+            /* height: 600px; */
+            /* 第二种解决办法  溢出隐藏*/
+            /* overflow: hidden; */
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid pink;
+            float: left;
+        }
+        .last{
+            /* 清除左浮动造成的影响 */
+            /* clear: left; */
+            /* 清除右浮动造成的影响 */
+            /* clear: right; */
+            /* 清除左右浮动造成的影响 */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="main clearfix">
+        <div class="box"></div>
+        <!-- 第三种：给浮动元素的父级元素的末尾添加一个盒子
+        再设置该盒子清除浮动 -->
+        <!-- <div class="last"></div> -->
+    </div>
+</body>
+</html>

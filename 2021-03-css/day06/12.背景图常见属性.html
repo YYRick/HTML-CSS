@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day06 | 背景图常见属性</title>
+    <style>
+        .main{
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+            margin: 0 auto;
+            /* no-repeat 不平铺  */
+            background: url(../images/小破孩.gif) no-repeat;
+            /* 控制背景图是否平铺 background-repeat
+                  + repeat-x  沿着x轴平铺
+                  + repeat-y  沿着y轴平铺
+                  + no-repeat 不平铺
+                  + repeat 默认都平铺
+            */
+           /*  background-repeat: repeat-x; */
+            /* 控制背景图的位置
+               + 第一个值：x轴方向(水平)
+               + 第二个值：y轴方向(垂直)
+            */
+            background-position: 187px 187px;
+            background-position: center;
+            background-position: right bottom;
+            background-position: 50%;
+
+            /* 控制背景图的大小 */
+            background-size: 100%;
+            background-size: 300px 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+</body>
+</html>

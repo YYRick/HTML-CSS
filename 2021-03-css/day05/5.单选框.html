@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 05 |  单选框</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h3>请选择你的性别</h3>
+    <input type="radio" name="sex"><span>男</span>
+    <input type="radio" name="sex"><span>女</span>
+    <!-- 实现文字关联  点文字就可以选中对应的单选框
+         使用label标签把文字包裹起来，让它身上的for属性值
+         等于要关联的input标签的id值
+    -->
+    <h3>请选择你的性别</h3>
+    <input type="radio" name="sex" id="woman"><label for="woman">女</label>
+    <input type="radio" name="sex" id="man"><label for="man">男</label>
+</body>
+</html>

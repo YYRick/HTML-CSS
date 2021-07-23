@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day04 | 表格语义化</title>
+    <style>
+        table{
+            text-align: center;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+       表格语义化
+          thead  表格的头部
+          tbody  表格的主体
+          tfoot  表格的尾部
+          caption  表格的标题
+     -->
+    <table border="1" width="500" height="500">
+        <caption>学习成绩</caption>
+        <thead>
+            <tr>
+                <th>语文</th>
+                <th>数学</th>
+                <th>英语</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>100</td>
+                <td colspan="2">100</td>
+            </tr>
+            <tr>
+                <td rowspan="2">100</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+</body>
+</html>

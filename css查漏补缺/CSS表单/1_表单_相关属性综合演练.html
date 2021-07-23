@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>必填信息</legend>
+            <!-- 1.手机输入框 -->
+            <div>
+                <span>手机：</span>
+                <input type="text">
+            </div>
+
+            <!-- 2.密码输入框 -->
+            <div>
+                <span>密码：</span>
+                <input type="password">
+            </div>
+
+            <!-- 2.验证码输入框 -->
+            <div>
+                <span>验证码：</span>
+                <input type="text">
+                <input type="button" value="获取验证码">
+                <!-- 按钮还可以通过button实现 -->
+                <!-- <button>获取验证码</button> -->
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>选填信息</legend>
+            <!-- 4.照片选择 -->
+            <div>
+                <span>照片：</span>
+                <!-- 文件上传 -->
+                <input type="file">
+            </div>
+            <!-- 5.性别选择 -->
+            <div>
+                <span>性别：</span>
+                <!-- 单选框 -->
+                男<input type="radio" name="sex">
+                女<input type="radio" name="sex">
+            </div>
+            <!-- 6.爱好选择 -->
+            <div>
+                <span>爱好：</span>
+                <!-- 多选框 -->
+                唱歌<input type="checkbox" name="hobbies">
+                跳舞<input type="checkbox" name="hobbies">
+                rap<input type="checkbox" name="hobbies">
+                篮球<input type="checkbox" name="hobbies">
+            </div>
+
+            <!-- 7.学历 -->
+            <div>
+                <span>学历：</span>
+                <select name="" id="">
+                    <option value="0">小学</option>
+                    <option value="1">初中</option>
+                    <option value="2">高中</option>
+                </select>
+            </div>
+            <!-- 8.简介 -->
+            <div>
+                <span>简介：</span>
+                <textarea  cols="20" rows="5"></textarea>
+            </div>
+        </fieldset>
+        <!-- 9.重置按钮 
+            要想使重置按钮有效
+        前提1：type必须是reset类型(此时value默认是重置)
+        前提2：所有的内容都必须在同一个表单之中
+        -->
+        <input type="reset" value="重置">
+    </form>
+</body>
+</html>

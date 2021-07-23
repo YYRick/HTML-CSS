@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .main{
+            width: 600px;
+            height: 600px;
+            border:1px dashed darkturquoise;
+            margin:0px auto;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background:yellow;
+            animation: run 1s linear infinite;
+        }
+
+        @keyframes run {
+            0%,100%{
+                transform:translate(0,0);
+            }
+            25%{
+                transform:translate(500px,0);
+            }
+            50%{
+                transform:translate(500px,500px);
+            }
+            75%{
+                transform:translate(0px,500px);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        
+        .box:hover{
+            /* 将宽度缩放至原来的0.5倍 */
+            transform: scaleX(0.5);
+            /* 将高度缩放至原来的0.5倍 */
+            transform: scaleY(0.5);
+
+            /* 如果宽高缩放的比例一致，可以写成这样 */
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+     <div class="box"></div>
+</body>
+</html>

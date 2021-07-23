@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>头部</header>
+    <footer>底部</footer>
+    <nav>导航</nav>
+    <aside>侧边栏</aside>
+    <main>主体内容</main>
+    <section>就是div</section>
+
+    <article> 文章
+         <figure> 配图
+            <img src="https://imagepphcloud.thepaper.cn/pph/image/142/531/566.jpg" alt="">
+            <figcaption>乔布斯</figcaption> 配图说明
+         </figure>
+    </article>
+    <!-- 
+       preload 一打开页面的时候就开始加载资源（想让页面打开的快点不写）
+       不写此属性，当用户点击播放的时候再去加载资源
+
+     -->
+    <video src="212.mp4" controls loop autoplay preload>视频</video>
+
+    <!-- pc端音频兼容写法 -->
+    <audio>
+        <source src="xx.mp3">
+        <source src="xx.wav">
+        <source src="xx.ogg">
+    </audio>
+    <!-- 在移动端用MP3或者ogg的格式都可以 -->
+    <audio src=""></audio>
+</body>
+</html>

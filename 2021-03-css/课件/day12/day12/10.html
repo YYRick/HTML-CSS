@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:#000;
+        }
+        .progress{
+            width:0px;
+            height: 20px;
+            margin:0 auto;
+            background:-webkit-linear-gradient(left top,
+                #b5e61d 0%,
+                #b5e61d 25%,
+                #fff200 25%,
+                #fff200 50%,
+                #b5e61d 50%,
+                #b5e61d 75%,
+                #fff200 75%,
+                #fff200 100%
+
+                );
+            background-size:10px 10px;
+            animation: progress 1.5s linear infinite;
+            position:absolute;
+        }
+        
+        .progressOuter{
+            width:200px;
+            height: 20px;
+            background:#fff;
+            margin:100px auto;
+            position:relative;
+        }
+        @keyframes progress{
+            0%{
+                width:0;
+                background-position:0 0;
+            }
+            100%{
+                width:100%;
+                background-position:0px 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progressOuter">
+        <div class="progress"></div>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        (function () {
+            function computed() {
+                // 获取屏幕的宽度
+                var win = document.documentElement.clientWidth || document.body.clientWidth;
+                // 设计稿的尺寸
+                var des = 640;
+                // 如果屏幕的宽度>=设计稿的尺寸，我们
+                if (win >= des) {
+                    document.documentElement.style.fontSize ="100px";
+                    return;
+                }
+                document.documentElement.style.fontSize = win / des * 100 + "px";
+            }
+            computed();
+            window.onresize=function(){
+              computed();
+            }
+
+        })();
+    </script>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <a href="" class="logo"></a>
+        <a href="" class="menu"></a>
+    </header>
+</body>
+</html>

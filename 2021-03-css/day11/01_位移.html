@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* 沿着x轴方向移动 */
+            transform: translateX(200px);    
+            /* 沿着y轴方向移动
+               注意：这里会覆盖上面的沿着x轴移动
+               不会产生沿着x轴移动200px,沿着Y轴200px的效果
+               只会出现沿着Y轴移动200px的效果
+            */
+            transform: translateY(200px); 
+            /* 沿着x轴100px并且沿着Y轴100px */  
+            transform: translate(100px,100px); 
+        }
+    </style>
+</head>
+<body>
+     <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background:pink;
+          
+        }
+        .box:hover{
+            /* 改变在x轴方向所占的比例（宽） */
+            transform: scaleX(0.5);
+              /* 改变在y轴方向所占的比例（高） */
+            transform: scaleY(0.5);
+            /* 如果两个值相同可以写成一个*/
+            transform:scale(2);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

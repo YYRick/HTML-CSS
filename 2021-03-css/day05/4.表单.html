@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 05 | 表单</title>
+    <style>
+        /* 清除表单默认样式 */
+        textarea{
+            /* 禁止改变大小 */
+            resize: none;
+        }
+        textarea,input{
+            /* 消除蓝色线 */
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 表单常用属性  
+         autofocus  自动获取焦点
+         checked  默认选中
+         disabled 禁止选中
+         required 非空校验
+    -->
+    <form action="">
+        <!-- 文本输入框 
+             placeholder 输入框提示信息
+        -->
+        <input type="text" placeholder="请输入用户名" name="username" autofocus required>
+        <!-- 密码输入框 -->
+        <input type="password" placeholder="请输入密码" name="password" required>
+        <!-- 重置 -->
+        <input type="reset">
+        <!-- 提交 -->
+        <input type="submit">
+        <!-- 按钮 -->
+        <input type="button" value="支付" disabled>
+        <!-- 单选 -->
+        <input type="radio" checked>
+        <!-- 多选 -->
+        <input type="checkbox">
+        <button>安装</button>
+        <!--  下拉框
+              selected 默认选项
+        -->
+        <select name="" id="" >
+            <option value="" disabled>请选择你来自哪里?</option>
+            <option value="">北京</option>
+            <option value="" selected>上海</option>
+            <option value="">深圳</option>
+            <option value="">广州</option>
+        </select>
+
+        <!-- 文本域 -->
+        <textarea name="" id="" cols="50" rows="10"></textarea>
+    </form>
+</body>
+</html>

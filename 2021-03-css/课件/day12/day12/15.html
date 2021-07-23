@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+      *{
+          margin:0;
+          padding:0;
+       }
+       ul,ol{
+           list-style: none;
+       }
+       .main{
+           overflow: hidden;
+       }
+       li{
+           width:12.5%;
+           height: 35px;
+           line-height: 35px;
+           border:1px solid darkturquoise;
+           box-sizing: border-box;
+           float:left;
+           text-align: center;
+       }
+       /* 大于等于1101 的时候显示8个
+           901 -1100的时候显示4个
+           769px -900的时候显示2个
+           0-768px 的时候显示一个
+        */
+       @media screen and (max-width:768px) {
+           li{
+               width:100%;
+           }
+       }
+       @media screen and (min-width:769px) and (max-width:900px) {
+           li{
+               width:50%;
+           }
+       }
+       @media screen and (min-width:901px) and (max-width:1100px) {
+           li{
+               width:25%;
+           }
+       }
+       
+    </style>
+</head>
+
+<body>
+   <ul class="main">
+       <li>1</li>
+       <li>2</li>
+       <li>3</li>
+       <li>4</li>
+       <li>5</li>
+       <li>6</li>
+       <li>7</li>
+       <li>8</li>
+   </ul>
+
+</body>
+
+</html>

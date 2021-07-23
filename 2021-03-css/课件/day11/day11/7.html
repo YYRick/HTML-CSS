@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* 会让子元素有一个近大远小的效果 */
+            perspective: 1000px;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            transition:all 1s linear;
+        }
+        img:hover{
+            transform:rotateX(68deg);
+        }
+    </style>
+</head>
+<body>
+    <img src="https://img2.baidu.com/it/u=276684448,508018384&fm=26&fmt=auto&gp=0.jpg" alt="">
+</body>
+</html>

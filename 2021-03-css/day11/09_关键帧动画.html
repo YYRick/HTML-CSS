@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* 
+              关键帧动画默认最后会回到初始位置
+              forwards：停在最后位置
+            */
+            animation: run 1s linear forwards;
+        }
+
+        @keyframes run{
+            0%{
+                transform: translate(100px,0);
+            }
+
+            50%{
+                transform: translate(300px,300px);
+                background-color:darkturquoise;
+            }
+
+            100%{
+               transform: translate(0,500px);
+            }
+        }
+    </style>
+</head>
+<body>
+     <div class="box"></div>
+</body>
+</html>

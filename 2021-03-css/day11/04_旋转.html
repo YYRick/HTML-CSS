@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /* 过渡 */
+            transition: all 1s linear;
+        }
+
+        .box:hover{
+            /* 沿着Y轴旋转360度 */
+            transform: rotateY(360deg);
+            /* 沿着z轴旋转360度 */
+            transform: rotateZ(360deg);
+        }
+    </style>
+</head>
+<body>
+     <div class="box"></div>
+</body>
+</html>

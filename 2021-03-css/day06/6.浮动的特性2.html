@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day05 | 浮动的特性2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 500px;
+            height: 100px;
+            background: red;
+        }
+        /* 
+          块级元素不设置宽度会默认占据整行，
+          但是浮动后会和行内元素一样，宽度由自身内容决定
+        */
+        .box{
+            height: 40px;
+            background: orange;
+            float: left;
+        }
+
+        /* 
+           行内元素设置宽高无效，
+           但是行内元素浮动后设置宽高有效
+        */
+        span{
+            width: 100px;
+            height: 100px;
+            background: pink;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">box</div>
+    </div>
+    <span>span</span>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 
+          nth-child：所有子元素中的第几个
+        */
+        .main>p:nth-child(2){
+            background: pink;
+        }
+
+         /* 
+           nth-of-type是特定类型中的第几个
+         */
+        .main>p:nth-of-type(2){
+            background: purple;
+        }
+
+        /* 倒数第一个 */
+        .main>p:nth-last-of-type(1){
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>h2</h2>
+        <p>p1</p>
+        <h2>h2</h2>
+        <p>p2</p>
+        <p>p3</p>
+    </div>
+</body>
+</html>

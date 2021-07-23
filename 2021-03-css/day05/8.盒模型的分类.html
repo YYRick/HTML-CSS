@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day05 | 盒模型的分类</title>
+    <style>
+        /* 
+           盒模型的分类
+             + 标准盒模型(默认情况)
+             + IE盒模型(怪异盒模型)
+
+           区别：
+             + 对于标准盒模型来说，设置的width和height值不是总盒子的宽高，而是content的宽高
+             + 对于IE盒模型来说，设置的width和height就是总盒子的宽高
+         */
+        .box{
+            width: 100px;
+            height: 100px;
+            padding-top: 20px;
+            background-color: pink;
+            /* 转为IE盒模型(也称怪异盒模型) */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- 设计一个宽高都为100px padding-top为20px的盒子 -->
+    <div class="box">box</div>
+</body>
+</html>

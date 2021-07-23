@@ -1,0 +1,42 @@
+html,body,.bannerWrap{
+    width:100%;
+    height:100%;
+}
+.md{
+    width: 1080px;
+    padding:0 20px;
+    box-sizing: border-box;
+    margin:0 auto;
+    background:pink;
+}
+.bannerWrap{
+    background:pink;
+    position:relative;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}  
+#slide1,#slide2,#slide3{
+    background:url("../images/hero-bg-1.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+#slide2{
+    background-image:url("../images/hero-bg-2.jpg");
+}
+#slide3{
+    background-image:url("../images/hero-bg-3.jpg");
+}
+.headBody{
+    height: 56px;
+    background:green;
+    width: 100%;
+    position:absolute;
+    left:0;
+    top:12px;
+    z-index:999;
+}
+.headBodyIn{
+    height: 100%;
+}

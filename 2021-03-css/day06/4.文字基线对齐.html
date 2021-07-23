@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day05 | 文字基线对齐产生的问题</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 给父元素设置font-size: 0 */
+        body{
+            font-size: 0;
+        }
+        .box1,.box2{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: inline-block;
+            font-size: 14px;
+            /* 文字对齐方式：基线对齐(默认值) */
+            vertical-align: baseline;
+            /* 顶线对齐 */
+            vertical-align: top;
+            /* 中线对齐 */
+            vertical-align: middle;
+            /* 底线对齐 */
+            vertical-align: bottom;
+        }
+        .box2{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2"></div>
+</body>
+</html>

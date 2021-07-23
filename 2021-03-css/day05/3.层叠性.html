@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day05 | 层叠性</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            background: chartreuse;
+            border: 1px solid red;
+            margin: 20px;
+        }
+        div{
+            background: pink;
+        }
+        .box{
+            background: coral;
+        }
+        #box1{
+            background: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <!--   层叠性
+           对同一元素的同一属性设置不同的值
+           根据权重的大小来判断元素的显示样式 
+           判断依据：
+              权重不同，谁的权重大就听谁的
+              权重相同，谁在后面就听谁的(就近原则)
+     -->
+    <div class="box">
+        <span>哈哈哈哈哈</span>
+    </div>
+    <div id="box1">
+        <span>嘿嘿额嘿嘿</span>
+    </div>
+
+    <!--   权重大小：!important>行内样式>id>类>标签>通配符>继承>浏览器默认
+           + !important  无限大
+           + 行内样式  1000
+           + id    100
+           + 类    10
+           + 标签  1
+           + 通配符 0 
+     -->
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background:pink;
+            transition:all 1s linear;
+            /* 
+             改变作用点
+             第一个值：水平方向：left center right
+             第二个值：垂直方向：top  center bottom
+
+             */
+            transform-origin: center bottom;
+        }
+        .box:hover{
+            transform: rotateZ(45deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

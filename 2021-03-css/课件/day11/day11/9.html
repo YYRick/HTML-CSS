@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background:pink;
+            /* 第一个值：动画的名字 */
+            /* 第二个值：动画执行的时间 */
+            /* 第三个值：动画运动的曲线 */
+            /* 第四个值：延迟 */
+            /* 第五个值：运动的次数 infinite 是无限循环*/
+            /* 第六个值：动画状态：
+               forwards：让动画停留在最后一帧
+               backwards：如果有延迟，会迅速从第一帧的位置开始
+               both:就是forwards和backwards的结合
+            */
+            animation: run 1s linear 1s infinite  both alternate;
+           
+        }
+        @keyframes run {
+            0%{
+               transform:translate(100px,0);
+
+            }
+            50%{
+                transform:translate(300px,300px) scale(0.5);
+                background:lightgreen;
+            }
+            100%{
+                transform:translate(0px,500px);
+            }
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

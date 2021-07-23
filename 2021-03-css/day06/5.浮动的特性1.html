@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day05 | 浮动的特性1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 
+          box1脱离文档流，不在占位置
+          左浮动右浮动都是针对的父元素而言
+        */
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: left;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

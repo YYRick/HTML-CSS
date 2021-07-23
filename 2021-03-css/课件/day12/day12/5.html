@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:#000;
+        }
+        .box{
+           width: 100px;
+           height: 100px;
+           background:yellow;
+           /* box-shadow: 0px 2px 60px 4px #fff; */
+           /* 
+           第六个值:outset不写就是外阴影 
+                   inset：内阴影
+           */
+          
+           border-radius: 50%;
+           box-shadow: -3px -19px 60px -3px rgb(238, 3, 3,0.8) inset;
+           /* 
+            x轴偏移：0
+            y轴偏移：0
+            阴影的模糊度：0
+            阴影的大小就是边框下的大小（用阴影写的边框不占位置）
+           */
+           /* box-shadow: 0 0 0 5px yellowgreen; */
+
+           box-shadow:0 0 0 20px deepskyblue,
+                      0 0 0 40px lightsalmon,
+                      0 0 0 60px limegreen,
+                      0 0 0 80px lightskyblue;
+                      margin:100px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

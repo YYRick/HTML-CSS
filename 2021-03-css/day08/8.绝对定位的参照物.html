@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .main{
+            width: 200px;
+            height: 200px;
+            background: purple;
+        }
+
+        .warp{
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+   <!-- 
+       1、绝对定位的参照物必须是其父级元素且为定位元素
+       2、如果父级元素没有定位，就向父级的父级查找，直到找到已经定位的父级元素
+       3、如果父级元素都没有定位，那参照物就是body
+    -->
+    <div class="main">
+        <div class="warp"></div>
+        <div class="box1"></div>
+    </div>
+</body>
+</html>

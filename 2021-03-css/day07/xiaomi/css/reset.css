@@ -1,0 +1,37 @@
+/* 重置样式表 */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 清除列表自带圆点 */
+ul,ol{
+    list-style: none;
+}
+/* 清除下划线 */
+a{
+    text-decoration: none;
+}
+/* 清除边框自带颜色 */
+input,textarea{
+    outline: none;
+}
+/* 禁止文本框拖动 */
+textarea{
+    resize: none;
+}
+
+/* 清除浮动 */
+.clearfix::after{
+    content: "";
+    font-size: 0;
+    visibility: hidden;
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+/* 表示版心 */
+.md{
+    width: 1226px;
+    margin: 0 auto;
+}

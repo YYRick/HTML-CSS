@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day06 | 绝对定位</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 200px;
+            height: 200px;
+            background: purple;
+            margin-left: 50px;
+            margin-top: 100px;
+            /* 子绝父相：给绝对定位做参照物 */
+            position: relative;
+        }
+        
+        /* 
+          绝对定位的参照物是任何已经定位了的父元素
+          如果父元素没有定位，那就以body作为参照物
+        */
+        .box{
+            width: 100px;
+            height: 100px;
+            /* 距离top20px */
+            top: 20px;
+            /* 距离right20px */
+            right: 20px;
+            background: pink;
+            /* 绝对定位 */
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
