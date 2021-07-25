@@ -2,37 +2,74 @@
 .md{
     width: 1200px;
     margin: 0 auto;
+    height: 500px;
+    background: pink;
 }
 
-.whiteAreaIn{
-    background: pink;
-    height: 500px;
+.whiteArea{
+    background: #fff;
 }
+
 
 .headBox{
     height: 52px;
     line-height: 52px;
+    padding: 16px 0;
+    font-size: 14px;
+}
+
+.headBox>div,.headBox>.logo{
+    height: 52px;
+    float: left;
+}
+
+.headBox a{
+    color: #2a2a2a;
 }
 
 .headBox .logo{
-    width: 176px;
-    height: 100%;
-    float: left;
-    overflow: hidden;
+   width: 176px;
+   overflow: hidden;
 }
 
 .headBox .logo>a{
     display: block;
-    width: 100%;
-    height: 100%;
-    background: url("../images/Layer\ 11.png")
-    center center no-repeat;
+    height: 52px;
+    background: url('../images/logo1.png') center center no-repeat;
 }
 
-.headBox .links{
+.headBox .links a{
+   margin-left: 55px;
+}
+
+.headBox .info{
+   float: right;
+}
+
+.headBox .info>a{
     float: left;
 }
 
-.links .info{
-  float: right;
+.headBox .info .cartBtn img{
+    vertical-align: middle;
+}
+
+.headBox .info .logIn{
+    margin: 0 35px 0 39px;
+}
+
+.bannerBox{
+    height: 360px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.grayArea{
+    height: 1000px;
+    background: lavender;
+}
+
+.footArea{
+    height: 1000px;
+    background: #333;
 }
