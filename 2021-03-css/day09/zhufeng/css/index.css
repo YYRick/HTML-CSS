@@ -2,8 +2,6 @@
 .md{
     width: 1200px;
     margin: 0 auto;
-    height: 500px;
-    background: pink;
 }
 
 .whiteArea{
@@ -59,9 +57,85 @@
 }
 
 .bannerBox{
+    position: relative;
     height: 360px;
-    border: 1px solid red;
     box-sizing: border-box;
+}
+
+.banner>a{
+    display: block;
+    height: 360px;
+}
+
+.bannerBox img{
+    width: 100%;
+    height: 100%;
+}
+
+.slidBar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 240px;
+    height: 100%;
+    background: rgba(2,0,0,.2);
+    font-size: 14px;
+}
+
+.slidBar a{
+    color:#fff;
+    display: block;
+    border-bottom: 1px solid #fff;
+    background: url('../images/arrow.png') 166px center no-repeat;
+    height: 72px;
+    line-height: 72px;
+    box-sizing: border-box;
+}
+
+.slidBar li{
+    padding: 0 25px;
+}
+
+.slidBar li:hover{
+    background: rgba(11, 11, 11, .3);
+}
+
+.slidBar .last{
+    border-bottom: none;
+}
+
+.slidBar .content{
+    width: 500px;
+    height: 100%;
+    background: green;
+    position: absolute;
+    left: 240px;
+    top: 0;
+    display: none;
+}
+
+.slidBar li:hover .content{
+    display: block;
+}
+
+.recomment{
+    height: 500px;
+    background: lavenderblush;
+}
+
+.recomment h3{
+    padding-top: 39px;
+    font-style: 16px;
+    color: #2d2d2d;
+    margin:0 0 19px 0;
+    line-height: 1;
+}
+
+.recomment .lists>li{
+    width: 250px;
+    height: 184px;
+    background: lavender;
+    float: left;
 }
 
 .grayArea{
