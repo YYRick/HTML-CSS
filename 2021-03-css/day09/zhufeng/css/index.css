@@ -6,6 +6,7 @@
 
 .whiteArea{
     background: #fff;
+    padding-bottom: 28px;
 }
 
 
@@ -118,11 +119,6 @@
     display: block;
 }
 
-.recomment{
-    height: 500px;
-    background: lavenderblush;
-}
-
 .recomment h3{
     padding-top: 39px;
     font-style: 16px;
@@ -134,8 +130,64 @@
 .recomment .lists>li{
     width: 250px;
     height: 184px;
-    background: lavender;
     float: left;
+    margin-right: 66px;
+    background: lavender url('../images/libg.png') center top no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.recomment .lists>li:last-child{
+    margin-right: 0;
+}
+
+.recomment .lists>li:hover .top{
+    height: 86px;
+}
+
+.recomment .floating{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    padding:15px 15px 0;
+}
+
+.recomment .floating h4{
+    font-style: 14px;
+    line-height: 1;
+}
+
+.recomment .floating h4:nth-child(2){
+    margin:6px 0 10px;
+}
+
+.recomment .floating .top{
+    padding-bottom: 10px;
+    height: 30px;
+    overflow: hidden;
+    transition: height 1s linear;
+}
+
+.recomment .floating p{
+    font-size: 12px;
+    color: #9E9D9D;
+}
+
+.recomment .floating .bottom{
+    height: 43px;
+    line-height: 43px;
+}
+
+.recomment .bottom .price{
+    float: left;
+    color: red;
+}
+
+.recomment .bottom .number{
+    float: right;
+    color: #9E9D9D;
 }
 
 .grayArea{
